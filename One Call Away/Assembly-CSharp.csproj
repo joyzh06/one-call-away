@@ -59,7 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CharacterController.cs" />
+    <Compile Include="Assets\Scripts\CharacterController.cs" />
+    <Compile Include="Assets\Scripts\DarkMove.cs" />
     <Reference Include="Cinemachine">
       <HintPath>C:/Users/joyxy/Documents/School/Junior/big-red-hacks-fall/one-call-away/One Call Away/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
