@@ -511,6 +511,7 @@ GameObject:
   - component: {fileID: 939779276}
   - component: {fileID: 939779275}
   - component: {fileID: 939779278}
+  - component: {fileID: 939779279}
   m_Layer: 0
   m_Name: platform_ground
   m_TagString: floor
@@ -621,6 +622,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &939779279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939779274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae98dc56ddb7a40a68e49138f5f4e720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: Cutscene 1
+  MAX_COUNT: 20
 --- !u!1 &1594543563
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,7 +1005,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2004991130}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -6.39, y: 6.38, z: 0}
+  m_LocalPosition: {x: -6.39, y: 0.31, z: 0}
   m_LocalScale: {x: 6.3405204, y: 0.59654087, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
