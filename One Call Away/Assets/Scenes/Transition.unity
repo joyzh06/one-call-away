@@ -300,3 +300,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: Darkness
+  MAX_COUNT: 25

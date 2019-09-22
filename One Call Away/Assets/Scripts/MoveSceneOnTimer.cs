@@ -8,11 +8,11 @@ public class MoveSceneOnTimer : MonoBehaviour {
 	[SerializeField] public string nextLevel; 
 
 	private int count = 0; 
-	private int MAX_COUNT = 3 * 60; 
+	public float MAX_COUNT; 
 
 	// Use this for initialization
 	void Start () {
-		
+		MAX_COUNT *= 60; 
 	}
 	
 	// Update is called once per frame
