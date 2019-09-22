@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GlitchPlatform : MonoBehaviour {
 
-    // public GameObject plat
+    public GameObject platform;
+    public Vector3 newPos;
+    private int x;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +17,14 @@ public class GlitchPlatform : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "glitch")
+        {
+            x = 0;
+        }
+    }
     
 
 
