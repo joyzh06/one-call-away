@@ -85,16 +85,17 @@ public class MoveCharacter : MonoBehaviour {
         transform.localScale = theScale;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "floor")
         {
             ground = true;
             jumping = false;
+            falling = false;
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "floor")
         {

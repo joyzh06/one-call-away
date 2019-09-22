@@ -128,7 +128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &80501385
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -725,8 +725,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1613247987}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 6.788, y: -0.439, z: 0}
-  m_LocalScale: {x: 6.3405194, y: 0.5158506, z: 1}
+  m_LocalPosition: {x: 6.37, y: 0.14, z: 0}
+  m_LocalScale: {x: 6.3405194, y: 0.4700919, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -850,7 +850,7 @@ GameObject:
   - component: {fileID: 2004991131}
   m_Layer: 0
   m_Name: platform_wall R
-  m_TagString: floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -952,7 +952,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2004991130}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -6.39, y: 6.38, z: 0}
+  m_LocalPosition: {x: -6.39, y: 0.13, z: 0}
   m_LocalScale: {x: 6.3405204, y: 0.59654087, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
