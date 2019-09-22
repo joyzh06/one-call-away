@@ -299,5 +299,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae98dc56ddb7a40a68e49138f5f4e720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Depression
+  nextLevel: Glitch
   MAX_COUNT: 16
