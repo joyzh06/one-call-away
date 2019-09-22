@@ -14,9 +14,7 @@ public class MoveSceneOnSpace : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print("hi");
 		if (Input.GetKeyDown(KeyCode.Space)) {
-			print("hit");
 			SceneManager.LoadScene(nextLevel);
 		}
 		
