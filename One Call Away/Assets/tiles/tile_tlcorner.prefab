@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61146385946161422}
   m_Layer: 0
   m_Name: tile_tlcorner
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
