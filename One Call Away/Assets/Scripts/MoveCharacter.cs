@@ -11,6 +11,8 @@ public class MoveCharacter : MonoBehaviour {
     bool isJump = false;
     private bool m_FacingRight = true;
     private Vector3 m_Velocity = Vector3.zero;
+    public bool ground = true;
+    public float m_JumpForce = 400f;
 
     private Rigidbody2D m_Rigidbody2D;
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
@@ -29,11 +31,13 @@ public class MoveCharacter : MonoBehaviour {
 	void Update () {
         horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
         animator.SetFloat("speed", Mathf.Abs(horizontalMove));
+        isJump = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W);
+        Debug.Log(ground);
     }
 
     private void FixedUpdate()
     {
-        Move(horizontalMove * Time.fixedDeltaTime, false);
+        Move(horizontalMove * Time.fixedDeltaTime, isJump);
     }
 
     public void Move(float move, bool jump)
@@ -52,6 +56,12 @@ public class MoveCharacter : MonoBehaviour {
             Flip();
         }
 
+        if (ground && isJump)
+        {
+            ground = false;
+            m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+        }
+
     }
 
     private void Flip()
@@ -63,6 +73,14 @@ public class MoveCharacter : MonoBehaviour {
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "floor")
+        {
+            ground = true;
+        }
     }
 
 }
