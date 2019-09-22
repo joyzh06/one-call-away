@@ -59,20 +59,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CharacterController.cs" />
     <Compile Include="Assets\Scripts\DarkMove.cs" />
+    <Compile Include="Assets\Scripts\GroundCollider.cs" />
     <Compile Include="Assets\Scripts\MoveCharacter.cs" />
-    <Reference Include="Cinemachine">
-      <HintPath>C:/Users/joyxy/Documents/School/Junior/big-red-hacks-fall/one-call-away/One Call Away/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/joyxy/Documents/School/Junior/big-red-hacks-fall/one-call-away/One Call Away/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/joyxy/Documents/School/Junior/big-red-hacks-fall/one-call-away/One Call Away/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/joyxy/Documents/School/Junior/big-red-hacks-fall/one-call-away/One Call Away/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>C:/Users/joyxy/Documents/School/Junior/big-red-hacks-fall/one-call-away/One Call Away/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/joyxy/Documents/School/Junior/big-red-hacks-fall/one-call-away/One Call Away/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

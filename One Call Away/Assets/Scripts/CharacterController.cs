@@ -113,4 +113,12 @@ public class CharacterController : MonoBehaviour {
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "ground")
+        {
+
+        }
+    }
 }

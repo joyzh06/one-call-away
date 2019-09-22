@@ -128,7 +128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &80501385
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -204,8 +204,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.53, y: 2}
+  m_Offset: {x: 0, y: -0.1}
+  m_Size: {x: 0.53, y: 1.85}
   m_Direction: 0
 --- !u!4 &306178323 stripped
 Transform:
@@ -224,7 +224,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 306178325}
+  collider: {fileID: 0}
   moveSpeed: 20
+  ground: 1
+  m_JumpForce: 400
   m_MovementSmoothing: 0.05
 --- !u!95 &306178325
 Animator:
@@ -460,7 +463,7 @@ GameObject:
   - component: {fileID: 939779278}
   m_Layer: 0
   m_Name: platform_ground
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
