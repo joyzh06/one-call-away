@@ -5,7 +5,6 @@ using UnityEngine;
 public class MoveCharacter : MonoBehaviour {
 
     public Animator animator;
-    public GameObject collider;
 
     public float moveSpeed = 20f;
     float horizontalMove = 0;
@@ -32,7 +31,7 @@ public class MoveCharacter : MonoBehaviour {
 	void Update () {
         horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
         animator.SetFloat("speed", Mathf.Abs(horizontalMove));
-        isJump = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow);
+        isJump = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W);
         Debug.Log(ground);
     }
 
