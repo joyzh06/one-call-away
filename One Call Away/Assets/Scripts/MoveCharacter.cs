@@ -33,7 +33,6 @@ public class MoveCharacter : MonoBehaviour {
         horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
         animator.SetFloat("speed", Mathf.Abs(horizontalMove));
         isJump = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow);
-        Debug.Log(ground);
     }
 
     private void FixedUpdate()
