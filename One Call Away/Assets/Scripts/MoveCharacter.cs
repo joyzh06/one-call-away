@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MoveCharacter : MonoBehaviour {
 
+    public Animator animator;
+
     public float moveSpeed = 20f;
     float horizontalMove = 0;
     bool isJump = false;
@@ -26,6 +28,7 @@ public class MoveCharacter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        animator.SetFloat("speed", Mathf.Abs(horizontalMove));
     }
 
     private void FixedUpdate()
