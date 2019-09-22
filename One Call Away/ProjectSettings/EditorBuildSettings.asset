@@ -8,4 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Cutscene 1.unity
+    guid: a78116bede8b3489c9c5c8650d9c9d87
+  - enabled: 1
+    path: Assets/Scenes/Darkness.unity
+    guid: 69584672ade0ac34883c9362c6305141
+  - enabled: 1
+    path: Assets/Scenes/Depression.unity
+    guid: 6fb33618875534f778177e41da2c21a1
+  - enabled: 1
+    path: Assets/Scenes/Gravity.unity
+    guid: eab3e7a41ffcd4cd182f285784eacea2
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: f33aaffca754744be8a129fd72de426d
+  - enabled: 1
+    path: Assets/Scenes/Transition.unity
+    guid: f234b2bb73bbb4638840e8e9781e7825
   m_configObjects: {}
