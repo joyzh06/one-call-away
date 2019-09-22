@@ -26,8 +26,10 @@ public class MoveSceneTimer : MonoBehaviour {
         if (count <= 0)
         {
             SceneManager.LoadScene(nextLevel);
+            Debug.Log("yeet");
+        } else {
+            Debug.Log("yote");
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collider)

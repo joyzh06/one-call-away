@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 1028648237}
   - component: {fileID: 1028648236}
   - component: {fileID: 1028648235}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: black3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,10 +574,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1093879775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5e5f773fd58b34e92551bdc0795636, type: 3}
+  m_Script: {fileID: 11500000, guid: 6591bf077c780784a83a7974c1ed498b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Glitch
+  nextLevel: Cutscene 3
+  count: 30
 --- !u!1 &1482380876
 GameObject:
   m_ObjectHideFlags: 0

@@ -1170,7 +1170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6591bf077c780784a83a7974c1ed498b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Title
+  nextLevel: Cutscene 2
   count: 30
 --- !u!114 &1670915965
 MonoBehaviour:
