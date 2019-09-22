@@ -87,7 +87,7 @@ public class MoveCharacter : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "floor")
+        if (collision.gameObject.tag == "floor" || collision.gameObject.tag.Contains("glitch"))
         {
             ground = true;
             jumping = false;
@@ -97,7 +97,7 @@ public class MoveCharacter : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "floor")
+        if (collision.gameObject.tag == "floor" || collision.gameObject.tag.Contains("glitch"))
         {
             ground = false;
         }
