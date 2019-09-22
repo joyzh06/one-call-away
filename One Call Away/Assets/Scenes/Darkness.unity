@@ -444,7 +444,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 552742ff894b7e94c956970044449482,
+      objectReference: {fileID: 21300000, guid: edaeac50e30870e49a0d8ada41138bd8,
         type: 3}
     m_RemovedComponents:
     - {fileID: 70866741802968020, guid: 9a98b343d8d66544688520db78e13c9f, type: 2}
@@ -611,7 +611,7 @@ GameObject:
   - component: {fileID: 1808028755}
   - component: {fileID: 1808028754}
   m_Layer: 5
-  m_Name: dark16
+  m_Name: dark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -690,7 +690,7 @@ SpriteRenderer:
   m_Size: {x: 12.8, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1808028757
 Transform:
