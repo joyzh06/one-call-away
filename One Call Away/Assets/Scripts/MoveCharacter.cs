@@ -12,7 +12,9 @@ public class MoveCharacter : MonoBehaviour {
     private bool m_FacingRight = true;
     private Vector3 m_Velocity = Vector3.zero;
     public bool ground = true;
+    public bool falling = false;
     public float m_JumpForce = 400f;
+    public bool jumping = false;
 
     private Rigidbody2D m_Rigidbody2D;
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
@@ -31,6 +33,8 @@ public class MoveCharacter : MonoBehaviour {
 	void Update () {
         horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
         animator.SetFloat("speed", Mathf.Abs(horizontalMove));
+        animator.SetBool("ground", ground);
+        animator.SetBool("falling", falling);
 
         isJump = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W);
     }
@@ -60,6 +64,12 @@ public class MoveCharacter : MonoBehaviour {
         {
             ground = false;
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            jumping = true;
+        }
+
+        if (!ground && !jumping)
+        {
+            falling = true;
         }
 
     }
@@ -80,6 +90,15 @@ public class MoveCharacter : MonoBehaviour {
         if (collision.gameObject.tag == "floor")
         {
             ground = true;
+            jumping = false;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "floor")
+        {
+            ground = false;
         }
     }
 

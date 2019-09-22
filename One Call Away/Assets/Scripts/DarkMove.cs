@@ -13,7 +13,7 @@ public class DarkMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.position = player.transform.position + new Vector3(-0.55f, 1.5f, 0);
+        this.transform.position = player.transform.position + new Vector3(-1.4f, 2.8f, 0);
 		
 	}
 }
